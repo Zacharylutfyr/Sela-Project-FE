@@ -30,6 +30,11 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+});
+
+router.beforeEach ((to, from, next) => {
+  console.log(to, from);
+  next ();
 })
 
 export default router

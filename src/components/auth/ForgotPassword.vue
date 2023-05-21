@@ -3,7 +3,10 @@
     <div class="container">
       <div class="login-box">
         <div class="left-container">
-          <img src="../../assets/images/forgot-password-image.jpg" alt="background-1.png" />
+          <img
+            src="../../assets/images/forgot-password-image.jpg"
+            alt="background-1.png"
+          />
         </div>
         <div class="right-container d-flex flex-column justify-content-between">
           <div class="right-top text-center">
@@ -31,12 +34,12 @@
           </div>
           <div class="right-botom">
             <div class="text-center">
-              <a class="small" href="1-register.html">Create an Account!</a>
+              <router-link to="/register"> Create an Account! </router-link>
             </div>
             <div class="text-center">
-              <a class="small" href="2-login.html"
-                >Already have an account? Login!</a
-              >
+              <router-link to="/">
+                Already have an account? Login!
+              </router-link>
             </div>
           </div>
         </div>
